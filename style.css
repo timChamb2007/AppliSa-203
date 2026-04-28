@@ -10,8 +10,10 @@ html {
 body {
 	background-color: aliceblue;
 	margin: 0%;
-	padding: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
 	min-height: 100vh;
+	margin-top: -1%;
 }
 
 /*--barre de navigation--*/
@@ -21,7 +23,6 @@ nav {
 	font-size: 110%;
 	font-weight: bold;                /* Police en gras, pour la barre de navigation */
 	margin: 0%;
-	margin-top: -4%;
 }
 
 nav ul {
@@ -55,6 +56,8 @@ h1 {
 	border-color: #2798F5;
 	text-transform: uppercase;
 }
+
+/* Main */
 
 section > resume_h2 {
 	padding: 1%;
