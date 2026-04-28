@@ -114,11 +114,37 @@ footer > p
 /* script */
 
 #unTab {
-  border-collapse: collapse;
-  border: 2px solid rgb(140 140 140);
-  font-family: sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#unTab thead {
+    background-color: #2798F5;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+#unTab th, #unTab td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+#unTab tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+#unTab tbody tr:last-child {
+    border-bottom: none;
+    background-color: #fdfdfd;
+    color: #2798F5;
+    font-weight: bold;
 }
 
 caption {
