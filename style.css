@@ -64,3 +64,18 @@ section > resume_h2 {
 	text-align: left;
 	background-color:rgb(0, 255, 191);
 }
+
+#unTab {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
