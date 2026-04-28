@@ -3,7 +3,7 @@
 html {
 	background-color: wheat;
 	padding-right: 10%;
-	padding-left: 10%;*
+	padding-left: 10%;
 	font-family: arial, sans-serif;
 }
 
@@ -87,6 +87,10 @@ footer {
 	min-height: 20vh;
 	background-color: rgb(146, 145, 145);
 }
+footer > p
+{
+	font-size: 120%;
+}
 
 /* script */
 
@@ -103,4 +107,5 @@ caption {
   padding: 10px;
   font-weight: bold;
 }
+
 

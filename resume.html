@@ -24,7 +24,7 @@
 
 		<main>
 			<section>
-				<h2 class="resume_h2">Résumé des Commandes git apprises</h2>
+				<h2 class="resume_h2">Résumé des Commandes git apprises :</h2>
 					<ol>
 						<li>
 							<h3>git add fichier/repertoire</h3>
@@ -102,13 +102,55 @@
 							<h3>git switch NomDeBranche</h3>
 							<p>Sert à changer de branche</p>
 						</li>
-						
+					</ol>
+			</section>
+			<section>
+				<h2 class="resume_h2">Résumé des commandes docker apprises :</h2>
+					<ol>
+						<li>
+							<h3>docker ps</h3>
+							<p>Cette commande permet de lister les conteneurs en cours d'executions</p>
+						</li>
+						<li>
+							<h3>docker ps -a</h3>
+							<p>Cette commande permet d'afficher la Liste des conteneurs y compris les conteneurs arrêtés</p>
+						</li>
+						<li>
+							<h3>docker ps -q</h3>
+							<p>Cette commande permet de lister les id (le hashage) des conteneurs en cours d'executions</p>
+						</li>
+						<li>
+							<h3>docker run NomImage</h3>
+							<p>Cette commande permet de on crée un conteneur à partir d une image. Si nous n avons pas l image sur notre pc, elle est téléchargé automatiquement</p>
+						</li>
+						<li>
+							<h3>docker run -d -p Numport:80 NomConteneur</h3>
+							<p>Cette commande permet de lancer un conteneur en arrière plan accessible depuis le port Numport</p>
+						</li>
+						<li>
+							<h3>docker rm Numid</h3>
+							<p>Cette commande permet de le conteneur ayant l'id Numid (uniquement si il est arrêté)</p>
+						</li>
+						<li>
+							<h3>docker build -t NomImage</h3>
+							<p>Cette commande permet de créer une nouvelle image a partir du fichier Dockerfile</p>
+						</li>
+						<li>
+							<h3>docker run --name NomConteneur -d -p Numport:80 NomImage</h3>
+							<p>Cette commande permet de créer un conteneur accesible au Numport qui a comme image NomImage</p>
+						</li>
 					</ol>
 			</section>
 		</main>
 
 		<footer>
-
+			<p>
+				- Antoine Bertin<br>
+				- Tim     Chambouleyron<br>
+				- Londhey Manounou<br>
+				- Groupe R3
+			</p>
+			
 		</footer>
 	</body>
 
