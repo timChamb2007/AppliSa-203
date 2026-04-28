@@ -79,21 +79,22 @@ main > video {
 	width: 50%;
 	margin: 0 auto 3% auto;
 	padding: 12px 20px;
-	background-color: #333;
+	background-color: #105f00;
 	color: white;
 	text-decoration: none;
 	border-radius: 8px;
 	font-size: 120%;
+	text-align:center;
 }
 
 .bouton-telechargement:hover {
-	background-color: #555;
+	background-color: #157b00;
 }
 
 main > .paragraphe-video {
 	font-size: 130%;
 	padding: 1%;
-	background-color: #333;
+	background-color: #4c4c4c;
 }
 
 /* Footer */
