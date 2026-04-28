@@ -64,3 +64,26 @@ section > resume_h2 {
 	text-align: left;
 	background-color:rgb(0, 255, 191);
 }
+
+main > video {
+	width: 80%;
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 3%;
+}
+
+main > .paragraphe-video {
+	font-size: 130%;
+	padding: 1%;
+	background-color: #333;
+}
+
+/* Footer */
+
+footer {
+	margin-top: 4%;
+	min-height: 20vh;
+	background-color: rgb(146, 145, 145);
+}
