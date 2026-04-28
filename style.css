@@ -90,6 +90,7 @@ footer {
 footer > p
 {
 	font-size: 120%;
+	text-align:center;
 }
 
 /* script */
