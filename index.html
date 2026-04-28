@@ -68,31 +68,73 @@
 						<li>
 							<h3>Étape 4</h3>
 							<p>Parfumer de rhum.</p>
-						</li>
-						<li>
+
+							<li>
 							<h3>Étape 5</h3>
-							<p>Faire chauffer une poêle antiadhésive et la huiler très légèrement à l'aide d'un papier Essuie-tout. Y verser une louche de pâte, la répartir dans la poêle puis attendre qu'elle soit cuite d'un côté avant de la retourner. Cuire ainsi toutes les crêpes à feu doux. Compter 2 minutes par crêpe environ : 1 minute 30 pour la première face, 30 secondes pour la seconde face, juste pour faire apparaître les tâches "léopard".</p>
-						</li>
-					</ol>
+						<p>Faire chauffer une poêle antiadhésive et la huiler très légèrement à l'aide d'un papier Essuie-tout. Y verser une louche de pâte, la répartir dans la poêle puis attendre qu'elle soit cuite d'un côté avant de la retourner. Cuire ainsi toutes les crêpes à feu doux. Compter 2 minutes par crêpe environ : 1 minute 30 pour la première face, 30 secondes pour la seconde face, juste pour faire apparaître les tâches "léopard".</p>
+					</li>
+				</ol>
 			</section>
-		<form>
-		  <div>
-			<label for="pseudo">Entrez votre pseudo: </label>
-			<input type="text" id="pseudo" name="unpseudo" required/>
-			<br></br>
-			<label for="comm">Entrez votre commentaire: </label>
-			<input type="text" id="comm" name="uncomm" required/>
-		  </div>
-		  <div>
-			<button>Soumettre</button>
-		  </div>
-		</form>
+
+			<section id="espace-commentaires" style="margin-top: 50px;">
+				<hr>
+				<h2>Avis des internautes</h2>
+
+				<div id="zoneCommentaires" style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #ccc; font-family: sans-serif;">
+					<p style="color: #666;"><em>Aucun commentaire pour le moment...</em></p>
+				</div>
+
+				<form id="monFormulaire">
+					<div style="margin-bottom: 15px;">
+						<label for="pseudo">Votre pseudo : </label>
+						<br>
+						<input type="text" id="pseudo" name="unpseudo" required style="margin-top: 5px;"/>
+					</div>
+					<div style="margin-bottom: 15px;">
+						<label for="comm">Votre commentaire : </label>
+						<br>
+						<input type="text" id="comm" name="uncomm" required style="width: 100%; max-width: 500px; height: 40px; margin-top: 5px;"/>
+					</div>
+					<div>
+						<button type="submit" style="padding: 10px 20px; cursor: pointer;">Soumettre mon avis</button>
+					</div>
+				</form>
+			</section>
 
 		</main>
 
 		<footer>
+			</footer>
 
-		</footer>
+		<script>
+			const form = document.getElementById('monFormulaire');
+			const zone = document.getElementById('zoneCommentaires');
+
+			form.addEventListener('submit', function(e) {
+				e.preventDefault(); // Empêche la page de se recharger
+
+				const pseudo = document.getElementById('pseudo').value;
+				const message = document.getElementById('comm').value;
+
+				// Création du bloc de texte pour le commentaire
+				const nouveauCom = document.createElement('div');
+				nouveauCom.style.borderBottom = "1px solid #ddd";
+				nouveauCom.style.padding = "10px 0";
+				nouveauCom.innerHTML = `<strong>${pseudo}</strong> : ${message}`;
+
+				// Nettoyage du message "Aucun commentaire"
+				const messageVide = zone.querySelector('em');
+				if (messageVide) {
+					zone.innerHTML = '';
+				}
+
+				// Ajout au site
+				zone.appendChild(nouveauCom);
+
+				// Réinitialisation du formulaire
+				form.reset();
+			});
+		</script>
 	</body>
 
 </html>
