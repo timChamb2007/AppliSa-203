@@ -1,3 +1,43 @@
 html {
 	background-color: wheat;
+	padding-right: 10%;
+	padding-left: 10%;*
+	font-family: arial, sans-serif;
+}
+
+body {
+	background-color: aliceblue;
+	margin: 0%;
+	padding: 3%;
+}
+
+/*--barre de navigation--*/
+
+nav {
+	background-color: #333;
+	overflow: hidden;
+	font-size: 110%;
+	font-weight: bold; /* Police en gras, pour la barre de navigation */
+	margin: 0%;
+	margin-top: -3%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* ou space-between */
+}
+
+nav a {
+	color: white;
+	padding: 14px 23px;
+	text-decoration: none;
+	display: block;
+}
+
+nav a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #87abf8;
+	text-decoration: underline;
+	text-decoration-color: #87abf8;
+	text-decoration-thickness: 3px;
 }
