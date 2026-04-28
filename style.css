@@ -74,6 +74,22 @@ main > video {
 	margin-bottom: 3%;
 }
 
+.bouton-telechargement {
+	display: block;
+	width: 50%;
+	margin: 0 auto 3% auto;
+	padding: 12px 20px;
+	background-color: #333;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-size: 120%;
+}
+
+.bouton-telechargement:hover {
+	background-color: #555;
+}
+
 main > .paragraphe-video {
 	font-size: 130%;
 	padding: 1%;
