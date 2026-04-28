@@ -88,7 +88,7 @@ main > video {
 }
 
 .bouton-telechargement:hover {
-	background-color: #157b00;
+	background-color: #147600;
 }
 
 main > .paragraphe-video {
@@ -127,4 +127,23 @@ caption {
   font-weight: bold;
 }
 
+.commandes {
+	background-color: #a6c6e1;
+	padding: 1px;
+	margin-bottom: 2.5%;
+}
 
+.commandes > h2 {
+	font-size: 150%;
+	padding-left: 1%;
+	font-family: monospace;
+	color: white;
+	background-color: black;
+}
+
+.commandes > p {
+	font-size: 110%;
+	padding-left: 2%;
+	font-style: italic;
+	color: #666f75;
+}
