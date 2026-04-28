@@ -1,3 +1,5 @@
+/* Préliminaire */
+
 html {
 	background-color: wheat;
 	padding-right: 10%;
@@ -23,8 +25,8 @@ nav {
 }
 
 nav ul {
-  display: flex;
-  justify-content: center; /* ou space-between */
+	display: flex;
+	list-style: none;
 }
 
 nav a {
